@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/layout/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />  
+    </definition>  
+    
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Prijava" />  
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+    </definition> 
+    
+    <definition name="market" extends="base.definition">  
+        <put-attribute name="title" value="Trgovina" />  
+        <put-attribute name="body" value="/WEB-INF/views/market.jsp" />  
+    </definition>  
+    
+   <definition name="job" extends="base.definition">  
+        <put-attribute name="title" value="Novi posao" />  
+        <put-attribute name="body" value="/WEB-INF/views/job.jsp" />  
+    </definition>  
+    
+</tiles-definitions>  
