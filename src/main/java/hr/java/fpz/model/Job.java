@@ -1,8 +1,7 @@
 package hr.java.fpz.model;
 
 import java.math.BigDecimal;
-
-import org.apache.tomcat.util.codec.binary.Base64;
+import org.apache.commons.codec.binary.Base64;
 
 public class Job {
 	private Integer idUser;
